@@ -1,0 +1,31 @@
+{
+    "name": "karl456/laravel-vehicle-enquiry-service",
+    "description": "Vehicle Enquiry Service for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karl Robinson",
+            "email": "karl@karl.pm"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Karl456\\VehicleEnquiryService\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karl456\\VehicleEnquiryService\\Providers\\VehicleEnquiryServiceProvider"
+            ],
+            "aliases": {
+                "VehicleEnquiryService": "Karl456\\VehicleEnquiryService\\Facades\\VehicleEnquiryServiceFacade"
+            }
+        }
+    }
+}
